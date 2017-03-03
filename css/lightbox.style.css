@@ -1,0 +1,38 @@
+div.lightbox{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 11000;
+    display: none;
+}
+
+div.lightbox>div.wrap-lightbox {
+    margin: 0 auto;
+    position: relative;
+    top: 10%; /*top: 170px;*/
+    border-radius: 6px;
+    border: 6px #ffffff solid;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.6);
+    display: none;
+    background-color: #ffffff;
+    box-sizing: content-box;
+    max-height: 100%;
+}
+#close-lightbox{
+	position: absolute;
+	display: none;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    background: transparent url(../img/ubpoverlay.png) -40px 0px;
+    cursor: pointer;
+    z-index: 1103;
+}
+@media screen and (max-width: 600px) {
+	div.lightbox>div.wrap-lightbox {
+		width: auto !important;
+		top: 90px;
+	}
+}
