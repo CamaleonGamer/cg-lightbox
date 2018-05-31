@@ -18,10 +18,18 @@ div.lightbox>div.wrap-lightbox {
     background-color: #ffffff;
     box-sizing: content-box;
     max-height: 100%;
+    width: auto !important;
+    margin: 30% !important;
+    margin-top: 0 !important;
+    top: 5% !important;
+}
+div.lightbox>div.wrap-lightbox div.text {
+    padding: 25px;
+    overflow: auto;
 }
 #close-lightbox{
-	position: absolute;
-	display: none;
+    position: absolute;
+    display: none;
     top: -15px;
     right: -15px;
     width: 30px;
@@ -31,8 +39,20 @@ div.lightbox>div.wrap-lightbox {
     z-index: 1103;
 }
 @media screen and (max-width: 600px) {
-	div.lightbox>div.wrap-lightbox {
-		width: auto !important;
-		top: 90px;
-	}
+    div.lightbox>div.wrap-lightbox {
+        width: auto !important;
+        max-height: 400px;
+        top: 35px;
+        margin: 10% !important;
+    }
+    div.lightbox>div.wrap-lightbox .content-lightbox {
+        max-height: 400px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    div.lightbox>div.wrap-lightbox {
+        margin: 10% !important;
+        margin-top: 0 !important;
+    }
 }
